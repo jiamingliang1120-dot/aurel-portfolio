@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUREL Product</title>
+    <meta name="description" content="AUREL product detail." />
+    <link rel="stylesheet" href="./vendor/fonts.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260926-olive" />
+  </head>
+  <body data-page="product">
+    <header class="site-header product-page-header" data-header>
+      <a class="brand-mark" href="./index.html#top" aria-label="AUREL home">
+        <img class="brand-logo" src="./assets/aurel-logo-minimal.svg" alt="" aria-hidden="true" width="150" height="150" decoding="async" />
+        <span>AUREL</span>
+      </a>
+      <nav class="site-nav product-page-nav" data-nav aria-label="Product navigation">
+        <a href="./index.html#ecosystem">All products</a>
+      </nav>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation">
+        <i data-lucide="menu"></i>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="product-detail-view" data-product-detail-view hidden aria-labelledby="product-detail-title">
+        <button class="detail-back" type="button" data-detail-back>
+          <i data-lucide="arrow-left"></i>
+          Back to products
+        </button>
+        <div class="detail-gallery" data-detail-gallery>
+          <div class="detail-visual">
+            <img src="./assets/display-aura-olive-0.webp" alt="AUREL product render" width="1000" height="1000" decoding="async" data-detail-render />
+            <span class="product-brand-mark" data-product-brand>AUREL</span>
+          </div>
+          <div class="detail-thumbs" data-detail-thumbs aria-label="Product view selector"></div>
+        </div>
+        <div class="detail-copy">
+          <p class="eyebrow" data-detail-category>AUREL Aura Detail</p>
+          <h1 id="product-detail-title" data-detail-title>A recovery bracelet with a jewelry-grade body.</h1>
+          <p data-detail-body>AUREL product detail.</p>
+          <div class="detail-specs">
+            <span data-detail-spec="0"></span>
+            <span data-detail-spec="1"></span>
+            <span data-detail-spec="2"></span>
+            <span data-detail-spec="3"></span>
+          </div>
+          <div class="purchase-config" data-purchase-config>
+            <div class="purchase-head">
+              <div>
+                <span data-detail-availability>Ships in 2-3 weeks</span>
+                <strong data-config-price>$329</strong>
+              </div>
+              <button type="button" data-add-to-bag>
+                <i data-lucide="shopping-bag"></i>
+                Add to bag
+              </button>
+            </div>
+            <div class="config-group">
+              <div class="config-label"><span data-option-group-label="0">Finish</span><small data-selected-option="0"></small></div>
+              <div class="option-row" data-option-group="0"></div>
+            </div>
+            <div class="config-group">
+              <div class="config-label"><span data-option-group-label="1">Size</span><small data-selected-option="1"></small></div>
+              <div class="option-row" data-option-group="1"></div>
+            </div>
+            <div class="purchase-assurance">
+              <span><i data-lucide="truck"></i> Free delivery</span>
+              <span><i data-lucide="rotate-ccw"></i> 30-day returns</span>
+              <span><i data-lucide="shield-check"></i> 2-year warranty</span>
+            </div>
+          </div>
+          <div class="function-demo" data-function-demo>
+            <p class="eyebrow">Function Demo</p>
+            <div class="demo-panel">
+              <div class="demo-effects" aria-hidden="true"><span data-effect-orbit></span><span data-effect-wave></span><span data-effect-pulse></span></div>
+              <div class="demo-panel-head"><i data-lucide="activity"></i><span data-demo-kicker></span></div>
+              <h2 data-demo-title></h2>
+              <div class="demo-meta"><span data-demo-metric></span><small data-demo-status></small></div>
+              <p data-demo-body></p>
+              <div class="demo-meter" aria-hidden="true"><span data-demo-meter></span></div>
+            </div>
+            <div class="demo-steps" data-demo-steps aria-label="Function demo selector">
+              <button type="button" data-demo-index="0"></button>
+              <button type="button" data-demo-index="1"></button>
+              <button type="button" data-demo-index="2"></button>
+            </div>
+          </div>
+          <div class="product-accordions" data-product-accordions>
+            <details open><summary><span data-accordion-title="0"></span><i data-lucide="chevron-down"></i></summary><p data-accordion-body="0"></p></details>
+            <details><summary><span data-accordion-title="1"></span><i data-lucide="chevron-down"></i></summary><p data-accordion-body="1"></p></details>
+            <details><summary><span data-accordion-title="2"></span><i data-lucide="chevron-down"></i></summary><p data-accordion-body="2"></p></details>
+            <details><summary><span data-accordion-title="3"></span><i data-lucide="chevron-down"></i></summary><p data-accordion-body="3"></p></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="sticky-purchase" data-sticky-purchase hidden>
+      <div><strong data-sticky-name></strong><span data-sticky-config></span></div>
+      <div><span data-sticky-price></span><button type="button" data-add-to-bag><i data-lucide="shopping-bag"></i>Add</button></div>
+    </div>
+    <div class="bag-overlay" data-bag-overlay hidden></div>
+    <aside class="bag-drawer" data-bag-drawer hidden aria-hidden="true" aria-label="Shopping bag">
+      <div class="bag-head"><div><span>Added to bag</span><strong data-bag-name></strong></div><button type="button" data-close-bag aria-label="Close bag"><i data-lucide="x"></i></button></div>
+      <div class="bag-item"><img src="./assets/aura-wrap-ivory-lapis-unified.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async" data-bag-image /><span class="product-brand-mark" data-product-brand>AUREL</span><div><p data-bag-config></p><strong data-bag-price></strong><span data-bag-note></span></div></div>
+      <div class="bag-actions"><button type="button" class="button button-dark" data-close-bag>Continue browsing</button></div>
+    </aside>
+
+    <script src="./vendor/lucide-0.468.0.min.js"></script>
+    <script src="./app.js?v=20260926-olive-first"></script>
+  </body>
+</html>

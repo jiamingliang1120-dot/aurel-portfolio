@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUREL Live Action Product Films</title>
+    <style>
+      :root {
+        --paper: #f8f6ef;
+        --ink: #121514;
+        --muted: rgba(18, 21, 20, 0.64);
+        --line: rgba(18, 21, 20, 0.12);
+        --champagne: #d4b983;
+        --sage: #87988b;
+        --blue: #96b1c2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 8% 8%, rgba(255, 255, 255, 0.86), transparent 30%),
+          linear-gradient(135deg, #fbfaf5, #edf1ee 56%, var(--paper));
+        color: var(--ink);
+        font-family: Inter, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 44px 0 64px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: end;
+        margin-bottom: 34px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 18px;
+        font-weight: 760;
+        letter-spacing: 0.16em;
+      }
+
+      .brand::before {
+        content: "";
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background:
+          conic-gradient(from 20deg, var(--champagne), #d8ddd7, var(--sage), var(--champagne)),
+          linear-gradient(135deg, #fff, #e8e4d8);
+        border: 1px solid rgba(18, 21, 20, 0.16);
+        box-shadow: 0 18px 48px rgba(18, 21, 20, 0.12);
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 28px 0 0;
+        font-size: clamp(42px, 6vw, 76px);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .intro {
+        max-width: 440px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 19px;
+        line-height: 1.45;
+      }
+
+      .grid {
+        display: grid;
+        gap: 28px;
+      }
+
+      .film-card {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 28px;
+        align-items: center;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 34px;
+        background: rgba(255, 255, 255, 0.54);
+        box-shadow: 0 34px 96px rgba(18, 21, 20, 0.1);
+        backdrop-filter: blur(18px);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 24px;
+        background: #e9ece8;
+        box-shadow: 0 30px 84px rgba(18, 21, 20, 0.14);
+      }
+
+      .meta {
+        padding: 6px 8px;
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        color: rgba(18, 21, 20, 0.52);
+        font-size: 13px;
+        font-weight: 780;
+        letter-spacing: 0.13em;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 36px;
+        line-height: 1.04;
+      }
+
+      .meta p {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.45;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 24px;
+      }
+
+      .chips span {
+        padding: 10px 13px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.6);
+        color: rgba(18, 21, 20, 0.7);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      @media (max-width: 860px) {
+        header,
+        .film-card {
+          grid-template-columns: 1fr;
+        }
+
+        header {
+          align-items: start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <div class="brand">AUREL</div>
+          <h1>Live Action Product Films</h1>
+        </div>
+        <p class="intro">Three English live-action style product ads with separate stories, human scenes, product close-ups, and function overlays.</p>
+      </header>
+
+      <section class="grid" aria-label="AUREL live action story videos">
+        <article class="film-card">
+          <video controls playsinline webkit-playsinline preload="metadata" poster="./video-assets/aurel-aura-story-poster.png">
+            <source src="./video-assets/aurel-aura-story-video.mp4" type="video/mp4" />
+            <source src="./video-assets/aurel-aura-story-video.webm" type="video/webm" />
+          </video>
+          <div class="meta">
+            <p class="eyebrow">AUREL AURA</p>
+            <h2>Recovery, shaped like jewelry.</h2>
+            <p>07:08 in a new city. A hotel morning, one recovery check, and a calmer way to choose the first rhythm of the day.</p>
+            <div class="chips"><span>Recovery Score</span><span>Body Load</span><span>Stress Rhythm</span><span>Health Trends</span></div>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <video controls playsinline webkit-playsinline preload="metadata" poster="./video-assets/aurel-loop-story-poster.png">
+            <source src="./video-assets/aurel-loop-story-video.mp4" type="video/mp4" />
+            <source src="./video-assets/aurel-loop-story-video.webm" type="video/webm" />
+          </video>
+          <div class="meta">
+            <p class="eyebrow">AUREL LOOP</p>
+            <h2>A work secretary, worn as a ring.</h2>
+            <p>09:42 in a design studio. Alex stays in the room while Loop handles the small controls around the proposal.</p>
+            <div class="chips"><span>Thank-You Reminder</span><span>Haptic Alarm</span><span>Slide Control</span><span>Music Control</span><span>Remote Selfie</span></div>
+          </div>
+        </article>
+
+        <article class="film-card">
+          <video controls playsinline webkit-playsinline preload="metadata" poster="./video-assets/aurel-clip-story-poster.png">
+            <source src="./video-assets/aurel-clip-story-video.mp4" type="video/mp4" />
+            <source src="./video-assets/aurel-clip-story-video.webm" type="video/webm" />
+          </video>
+          <div class="meta">
+            <p class="eyebrow">AUREL CLIP</p>
+            <h2>AI voice, designed as an ear cuff.</h2>
+            <p>20:30 at a photography exhibition. Clip helps one French sentence become a real conversation.</p>
+            <div class="chips"><span>Live Translation</span><span>Meeting Notes</span><span>Answer Calls</span><span>Music Playback</span><span>Voice Summary</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
